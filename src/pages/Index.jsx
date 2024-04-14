@@ -1,30 +1,11 @@
 import { Box, VStack, HStack, Heading, Text, Image, Container, Divider, Link } from "@chakra-ui/react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
     <Box>
-      {/* Header */}
-      <Box as="header" bg="navy" p={4}>
-        <HStack justify="space-between" maxW="container.lg" mx="auto">
-          <Heading as="h1" color="white">
-            John Quincy Adams
-          </Heading>
-          <HStack as="nav" spacing={4}>
-            <Link href="#" color="white">
-              Home
-            </Link>
-            <Link href="#" color="white">
-              Biography
-            </Link>
-            <Link href="#" color="white">
-              Presidency
-            </Link>
-            <Link href="#" color="white">
-              Legacy
-            </Link>
-          </HStack>
-        </HStack>
-      </Box>
+      <Header />
 
       <Container maxW="container.lg" py={12}>
         {/* Hero */}
